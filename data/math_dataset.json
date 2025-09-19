@@ -1,0 +1,59 @@
+[
+    {
+        "question": "What is the area of a circle with radius 5?",
+        "solution": {
+            "question": "What is the area of a circle with radius 5?",
+            "steps": [
+                {
+                    "step_number": 1,
+                    "explanation": "The formula for the area of a circle is A = πr², where r is the radius.",
+                    "formula": "A = πr²"
+                },
+                {
+                    "step_number": 2,
+                    "explanation": "Substitute the given radius (r=5) into the formula.",
+                    "formula": "A = π(5)²"
+                },
+                {
+                    "step_number": 3,
+                    "explanation": "Calculate the square of the radius.",
+                    "result": "5² = 25"
+                },
+                {
+                    "step_number": 4,
+                    "explanation": "Multiply by π to get the final area.",
+                    "result": "A = 25π"
+                }
+            ],
+            "final_answer": "25π square units",
+            "explanation": "The area of a circle is calculated using the formula A = πr². With a radius of 5, the area is 25π.",
+            "category": "GEOMETRY",
+            "confidence": 1.0
+        }
+    },
+    {
+        "question": "Solve for x: 2x + 3 = 7",
+        "solution": {
+            "question": "Solve for x: 2x + 3 = 7",
+            "steps": [
+                {
+                    "step_number": 1,
+                    "explanation": "Subtract 3 from both sides of the equation.",
+                    "formula": "2x + 3 - 3 = 7 - 3",
+                    "result": "2x = 4"
+                },
+                {
+                    "step_number": 2,
+                    "explanation": "Divide both sides by 2.",
+                    "formula": "2x / 2 = 4 / 2",
+                    "result": "x = 2"
+                }
+            ],
+            "final_answer": "x = 2",
+            "explanation": "To solve for x, first isolate the term with x by subtracting 3 from both sides, then divide by 2.",
+            "category": "ALGEBRA",
+            "confidence": 1.0
+        }
+    }
+]
+
