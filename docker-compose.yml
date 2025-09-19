@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+      - "6334:6334" # gRPC
+    volumes:
+      - ./qdrant_data:/qdrant/storage
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      # Ensure these match your .env or actual environment variables
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY}
+      TAVILY_API_KEY: ${TAVILY_API_KEY}
+      QDRANT_URL: http://qdrant:6333
+    depends_on:
+      - qdrant
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      REACT_APP_API_BASE_URL: http://localhost:8000 # Or the external IP/domain of your backend
+    depends_on:
+      - backend
+    restart: unless-stopped
+
