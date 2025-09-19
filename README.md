@@ -54,6 +54,7 @@ math-routing-agent/
 │   │   │   └── math_parser.py      # Mathematical expression parsing
 │   │   └── config.py               # Application configuration
 │   ├── requirements.txt            # Python dependencies
+|   ├── add_gsm8k_dataset.py        # knowledge base population script
 │   ├── Dockerfile                  # Backend containerization
 │   └── .env                        # Environment variables (create this)
 ├── frontend/
@@ -77,7 +78,6 @@ math-routing-agent/
 │   └── routing_history.json        # Routing decision history
 ├── docker-compose.yml              # Multi-service orchestration
 ├── start_server.py                # Direct server startup script
-├── add_gsm8k_dataset.py            # Knowledge base population script
 └── README.md                       # This file
 ```
 
