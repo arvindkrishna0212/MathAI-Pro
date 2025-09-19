@@ -159,17 +159,6 @@ This will add 100 random samples from the GSM8K dataset to your Qdrant knowledge
 3. Click "Solve" to receive a step-by-step solution
 4. Provide feedback to help improve the system
 
-### Example Queries
-
-**Knowledge Base Examples:**
-- "What is the area of a circle with radius 5?"
-- "Solve for x: 2x + 3 = 7"
-
-**Web Search + LLM Examples:**
-- "Explain the concept of eigenvalues and eigenvectors"
-- "What is the proof of the Pythagorean theorem?"
-- "How to calculate the definite integral of sin(x) from 0 to π?"
-
 ## 🔧 API Endpoints
 
 The backend provides the following REST API endpoints:
