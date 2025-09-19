@@ -123,6 +123,9 @@ The application will be available at:
 
 ### 4. Manual Setup (Alternative)
 
+#### Qdrant Setup
+docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant
+
 #### Backend Setup
 
 ```bash
